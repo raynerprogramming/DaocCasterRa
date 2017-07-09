@@ -42,7 +42,7 @@ var app = angular.module('app',['ui.router'])
 //STATE CONFIG
 app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider
-	.when("","/");
+	.when("","/home");
 
 	$stateProvider
 	.state('home', {
