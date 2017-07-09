@@ -19,9 +19,9 @@
           </div>
         </div>
         <div class="col s3">   
-          <input ng-model="numRA" type=number name="RA"/>
+          <input ng-model="numRA" type=number name="RA" min="0"/>
         </div>
-        <div class="col s3">
+        <div ng-show="false" class="col s3">
           <p>
             <input type="checkbox" id="test5" />
             <label for="test5">No Respec</label>

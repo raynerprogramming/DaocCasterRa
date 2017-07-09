@@ -4,7 +4,7 @@ var app = angular.module('app',['ui.router'])
 	$scope.data='Home';
 	$scope.imgsrc1 = "images/background.jpg";
 
-	$http.get("/data/radmgcost.xml",
+	$http.get("data/radmgcost.xml",
                     {
                         transformResponse: function (cnv) {
                             var x2js = new X2JS();
@@ -35,7 +35,7 @@ var app = angular.module('app',['ui.router'])
 		available=_($scope.data).filter(function(data){
 		 return data.cost <= $scope.numRA}
 		 );
-		$scope.best=_(available).max(function (data){ return data.dmg});
+		$scope.best=_(available).max(function (data){ return +data.dmg});
 	}
 
 })
