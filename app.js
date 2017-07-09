@@ -35,7 +35,7 @@ var app = angular.module('app',['ui.router'])
 		available=_($scope.data).filter(function(data){
 		 return data.cost <= $scope.numRA}
 		 );
-		$scope.best=_(available).max(function (data){ return data.dmg});
+		$scope.best=_(available).max(function (data){ return +data.dmg});
 	}
 
 })
