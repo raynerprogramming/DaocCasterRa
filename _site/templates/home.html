@@ -8,48 +8,63 @@
     <img ng-src="{{imgsrc1}}">
   </div>
 </div>
-<div>
+<div class="backgroundimg">
   <div class="container homecontainer">
     <div class="section">
       <!--   Icon Section   -->
       <div class="row nomargin">  
-      <div class="col s3 valign-wrapper">   
-          <div class="inputtitle">
-            Available Realm Ability Points:
+        <div class="col s12 l6 flexcol">   
+          <div class="card-panel">
+            <div class="row nomargin">  
+              <div class="col s12 l6 ">   
+                <div class="inputtitle">
+                  Available Realm Ability Points:
+                </div>
+              </div>
+              <div class="col s6">   
+                <input ng-model="numRA" type=number name="RA" min="0"/>
+              </div>
+              <div ng-show="false" class="col s3">
+                <p>
+                  <input type="checkbox" id="test5" />
+                  <label for="test5">No Respec</label>
+                </p>
+              </div>
+            </div>
+            <div class="row nomargin">  
+              <div class="col right s3">
+              <button class="btn waves-effect waves-light blue-grey" ng-click="calcBestRA()">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col s3">   
-          <input ng-model="numRA" type=number name="RA" min="0"/>
+        <div class="col s1">
         </div>
-        <div ng-show="false" class="col s3">
-          <p>
-            <input type="checkbox" id="test5" />
-            <label for="test5">No Respec</label>
-          </p>
-        </div>
-        <div class="col s3">
-          <button class="btn waves-effect waves-light" ng-click="calcBestRA()">Submit
-            <i class="material-icons right">send</i>
-          </button>
-        </div>
-      </div>
-      <div ng-show="best" class="row nomargin">  
-        <div class="col s2">
-          MOM: {{best.MOM}}
-        </div>
-        <div class="col s2">
-          WP: {{best.WP}}
-        </div>
-        <div class="col s2">
-          AA: {{best.AA}}
-        </div>
-        <div class="col s2">
-          Damage increase: {{best.dmg}}% 
-        </div>
-        <div class="col s2">
-         Total RA points: {{best.cost}}
+        <div class="col s1 l5 flexcol">   
+          <div class="card-panel dpspanel">
+           <ul class="collection with-header dpspanel">
+             <li class="collection-header"><h4>Best DPS</h4></li>
+             <li class="collection-item">
+              MOM: {{best.MOM}}
+            </li>
+            <li class="collection-item">
+              WP: {{best.WP}}
+            </li>
+            <li class="collection-item">
+              AA: {{best.AA}}
+            </li>
+            <li class="collection-item">
+              Damage increase: {{best.dmg}}% 
+            </li>
+            <li class="collection-item">
+             Total RA points: {{best.cost}}
+           </li>
+         </ul>
        </div>
-     </div> 
-   </div>
+     </div>
+   </div> 
  </div>
+</div>
 </div>

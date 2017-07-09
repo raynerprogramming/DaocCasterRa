@@ -4,6 +4,14 @@ var app = angular.module('app',['ui.router'])
 	$scope.data='Home';
 	$scope.imgsrc1 = "images/footer_lodyas.png";
 
+	$scope.best = {
+		"MOM":0,
+		"WP":0,
+		"AA":0,
+		"dmg":0,
+		"cost":0
+	}
+
 	$http.get("data/radmgcost.xml",
                     {
                         transformResponse: function (cnv) {
