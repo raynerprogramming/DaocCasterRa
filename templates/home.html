@@ -1,4 +1,14 @@
-<div class="parallax-container">
+<div class="parallax-container hide-on-med-and-down">
+  <div class="section">
+    <div class="container homecontainer">
+      <h1 class="header center grey-text text-lighten-4 maintitle">DAOC Caster Calculator</h1>
+    </div>
+  </div>
+  <div class="parallax">
+    <img ng-src="{{imgsrc1}}">
+  </div>
+</div>
+<div class="parallax-container hide-on-large-only mobileheader">
   <div class="section">
     <div class="container homecontainer">
       <h1 class="header center grey-text text-lighten-4 maintitle">DAOC Caster Calculator</h1>
@@ -22,7 +32,7 @@
                 </div>
               </div>
               <div class="col s6">   
-                <input ng-model="numRA" type=number name="RA" min="0"/>
+                <input ng-model="numRA" type=number name="RA" min="0" max="102"/>
               </div>
               <div ng-show="false" class="col s3">
                 <p>
@@ -40,9 +50,9 @@
             </div>
           </div>
         </div>
-        <div class="col s1">
+        <div class="col l1 hide-on-med-and-down">
         </div>
-        <div class="col s1 l5 flexcol">   
+        <div class="col s12 l5 flexcol">   
           <div class="card-panel dpspanel">
            <ul class="collection with-header dpspanel">
              <li class="collection-header"><h4>Best DPS</h4></li>

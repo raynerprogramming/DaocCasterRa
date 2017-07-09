@@ -23,3 +23,6 @@
 .card-panel{
 	width:100%;
 }
+.mobileheader{
+	max-height: 350px;
+}
