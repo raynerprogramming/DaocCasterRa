@@ -13,10 +13,40 @@
     <div class="section">
       <!--   Icon Section   -->
       <div class="row nomargin">  
-        <div class="col s12 m6">          
+        <div class="col s6">   
+          <input ng-model="numRA" type=number name="RA"/>
         </div>
-        <div class="col s12 m3">
+        <div class="col s3">
+          <p>
+            <input type="checkbox" id="test5" />
+            <label for="test5">No Respec</label>
+          </p>
         </div>
+        <div class="col s3">
+          <button class="btn waves-effect waves-light" ng-click="calcBestRA()">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+        <div ng-show="best" class="row nomargin">  
+          <div class="col s2">
+          MOM: {{best.MOM}}
+          </div>
+          <div class="col s2">
+          WP: {{best.WP}}
+          </div>
+          <div class="col s2">
+          AA: {{best.AA}}
+          </div>
+          <div class="col s2">
+            Damage increase: {{best.dmg}}% 
+          </div>
+          <div class="col s2">
+           Total RA points: {{best.cost}}
+          </div>
+        </div>
+        <div >
+
+        </div>   
       </div>
     </div>
   </div>
