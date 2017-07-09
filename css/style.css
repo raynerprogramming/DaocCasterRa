@@ -1,3 +1,15 @@
 .inputtitle{
 	padding-top:18px;
 }
+ .maintitle{
+ 	font-size: 4rem;
+ 	line-height: 4rem;
+ 	font-family: Roboto,sans-serif;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	padding-top: 100px;
+ 	text-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+ }
+ .body {
+    background-image: url("images/tweed.png");
+}

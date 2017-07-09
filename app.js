@@ -2,7 +2,7 @@ var app = angular.module('app',['ui.router'])
 //CONTROLLERS
 .controller('HomeController',function($scope,$http){
 	$scope.data='Home';
-	$scope.imgsrc1 = "images/background.jpg";
+	$scope.imgsrc1 = "images/footer_lodyas.png";
 
 	$http.get("data/radmgcost.xml",
                     {
